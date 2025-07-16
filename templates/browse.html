@@ -281,7 +281,7 @@
           <a href="/">🏠 Home</a>
           {{$parts := split .CurrentPath "/"}} {{$currentPath := ""}} {{range
           $i, $part := $parts}} {{if $part}} {{$currentPath = printf "%s/%s"
-          $currentPath $part}} / <a href="/{{$currentPath}}">{{$part}}</a>
+          $currentPath $part}} / <a href="{{$currentPath}}">{{$part}}</a>
           {{end}} {{end}}
         </div>
         {{end}}
